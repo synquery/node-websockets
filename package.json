@@ -5,7 +5,7 @@
 	"author": "EastCloud <info@east-cloud.co.jp>",
 	"repository": {
         "type": "git",
-        "url": "https://EastCloud@github.com/EastCloud/node-spreadsheets.git"
+        "url": "https://EastCloud@github.com/EastCloud/node-websockets.git"
     },
 	"main": "./lib/websockets/websockets",
 	"engines": {
