@@ -9,7 +9,7 @@ ws.on('connect', onconnect).listen(80);
 
 var wss = svr.createServer({
   validateOrigin: function(head) {
-	return 'node-websockets' === head['sec-websocket-origin'];
+    return 'node-websockets' === head['sec-websocket-origin'];
   },
   key: fs.readFileSync(path.join(__dirname, 'ssl/ryans-key.pem')),
   cert: fs.readFileSync(path.join(__dirname, 'ssl/ryans-cert.pem'))
@@ -29,17 +29,18 @@ function requestListener(req, res) {
 }
 function onconnect(socket) {
   socket.on('open', function() {
-	console.log('open');
+    console.log('open');
   });
   socket.on('error', function() {
-	console.log('error');
+    console.log('error');
   });
   socket.on('message', function(data) {
-	console.log('receive: ' + data.toString());
-	if('message from client' === data.toString());
-	  socket.send('message from server');
+    console.log('receive: ' + data.toString());
+    if('message from client' === data.toString())
+      ;
+    socket.send('message from server');
   });
   socket.on('close', function() {
-	console.log('close');
+    console.log('close');
   });
 }
