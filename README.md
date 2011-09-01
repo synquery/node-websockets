@@ -1,3 +1,4 @@
+
 node-websockets
 =
 
@@ -22,7 +23,7 @@ var websockets = require("websockets");
 
 ```
 
-#### Server:
+### _Server:_
 Server is a wrapper of `http/https` server.
 
 ```js
@@ -75,7 +76,7 @@ server.on('connect', function(socket) {
 ```
 
 
-#### Client:
+### _Client:_
 Client has the interfaces like [html5 WebSocket](http://www.w3.org/TR/2011/WD-websockets-20110419/).
 
 ```js
@@ -90,53 +91,75 @@ socket.on('open', function() {
 APIs
 -
 
-#### websockets.Server
+### websockets.Server
 
-##### Event: 'connect'
-`function (socket) {}`
+<br/>
+
+#### Event: 'connect'
+__`function (socket) {}`__
 
 Emitted when client-server opening handshake has succeeded. `socket` is an instance of `WebSocket`.
+  
+<br/>
 
-##### server.broadcast(string)
+#### server.broadcast(string)
 Not Implemented.
 Sends `string` to all clients connected with `server`.
 
-##### server.broadcast(buffer)
+<br/>
+
+#### server.broadcast(buffer)
 Not Implemented.
 Sends binary data(`buffer`) to all clients connected with `server`.
 
+<br/>
 
-#### websockets.WebSocket
+### websockets.WebSocket
 
-##### Event: 'open'
-`function () {}`
+<br/>
+
+#### Event: 'open'
+__`function () {}`__
 
 Emitted when a client-server connection is successfully established.
 
-##### Event: 'message'
-`function (data) {}`
+<br/>
+
+#### Event: 'message'
+__`function (data) {}`__
 
 Emitted when the socket has received a message. The type of `data` is either `string`(string data) or `Buffer`(binary data).
 
-##### Event: 'error'
-`function (exception) {}`
+<br/>
+
+#### Event: 'error'
+__`function (exception) {}`__
 
 Emitted on error. `exception` is an instance of Error.
 
-##### Event: 'close'
-`function () {}`
+<br/>
+
+#### Event: 'close'
+__`function () {}`__
 
 Emitted when a client-server connection has closed.
 
-##### socket.send(string)
+<br/>
+
+#### socket.send(string)
 Sends `string` to the other endpoint.
 
-##### socket.send(buffer)
+<br/>
+
+#### socket.send(buffer)
 Sends binary data(`buffer`) to the other endpoint.
 
-##### socket.close()
+<br/>
+
+#### socket.close()
 Sends a connection close request to the other endpoint.
 
+<br/>
 TODO
 =
 * implementation of server broadcast
