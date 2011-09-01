@@ -35,10 +35,9 @@ function onconnect(socket) {
     console.log('error');
   });
   socket.on('message', function(data) {
-    console.log('receive: ' + data.toString());
-    if('message from client' === data.toString())
-      ;
-    socket.send('message from server');
+    console.log('receive: ' + data);
+    if('message from client' === data)
+      socket.send('message from server');
   });
   socket.on('close', function() {
     console.log('close');

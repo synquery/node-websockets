@@ -4,7 +4,7 @@ var top = require('../lib/websockets/websockets');
 var client = new top.WebSocket('wss://127.0.0.1');
 
 client.on("message", function(data) {
-  console.log(data.toString());
+  console.log(data);
   client.close();
 });
 client.on('close', function() {
