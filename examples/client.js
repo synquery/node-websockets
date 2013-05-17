@@ -1,7 +1,9 @@
 /**/
 var top = require('../lib/websockets/websockets');
 
-var client = new top.WebSocket('wss://127.0.0.1');
+var client = new top.WebSocket('wss://127.0.0.1', {
+    'rejectUnauthorized': false
+});
 
 client.on("message", function(data) {
   console.log(data);

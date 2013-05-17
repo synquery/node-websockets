@@ -4,8 +4,11 @@ node-websockets
 
 ##### Web Socket Server and Client API
 
-* supports only `draft-ietf-hybi-thewebsocketprotocol-10`.
-* works with Google Chrome Dev Channel (>14.0.835.2) when using a browser as a WebSocket client.
+###### Support Protocols
+* [RFC 6455](http://tools.ietf.org/html/rfc6455)
+* [draft-ietf-hybi-thewebsocketprotocol-10](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-10)
+* [draft-ietf-hybi-thewebsocketprotocol-00](http://tools.ietf.org/html/draft-ietf-hybi-thewebsocketprotocol-00)
+
 
 Install
 -

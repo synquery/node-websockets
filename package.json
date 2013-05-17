@@ -1,7 +1,7 @@
 {
 	"name": "websockets",
 	"description": "WebSocket Server & Client API",
-	"version": "0.1.1",
+	"version": "0.2.0",
 	"author": "EastCloud <info@east-cloud.co.jp>",
 	"repository": {
         "type": "git",
@@ -12,7 +12,7 @@
 		"node": ">=0.4.10"
 	},
 	"licenses": [{
-		"type": "GNU General Public License version 3.0",
-		"url": "http://www.gnu.org/copyleft/gpl.html"
+		"type": "MIT",
+		"url": "https://github.com/EastCloud/node-websockets/blob/master/LICENSE.md"
 	}]
 }
