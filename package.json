@@ -2,14 +2,17 @@
 	"name": "websockets",
 	"description": "WebSocket Server & Client API",
 	"version": "0.1.0",
-	"author": "EastCloud <info@east-cloud.co.jp>",
+	"author": "EastCloud <info@east-cloud.co.jp> okubo, ystskm",
 	"repository": {
         "type": "git",
-        "url": "https://EastCloud@github.com/EastCloud/node-websockets.git"
+        "url": "https://ystskm@github.com/ystskm/node-websockets.git"
     },
-	"main": "./lib/websockets/websockets",
+	"main": "./lib/websockets",
+  "dependencies": {
+    "qs": ">= 0.5.0"
+  },
 	"engines": {
-		"node": ">=0.4.10"
+		"node": ">=0.4.12"
 	},
 	"licenses": [{
 		"type": "GNU General Public License version 3.0",

@@ -1,0 +1,6 @@
+.DS_Store
+.settings
+.project
+build.xml
+release.sh
+release-LICENSE

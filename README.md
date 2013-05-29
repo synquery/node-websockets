@@ -81,10 +81,13 @@ Client has the interfaces like [html5 WebSocket](http://www.w3.org/TR/2011/WD-we
 
 ```js
 var socket = new websockets.WebSocket('wss://127.0.0.1');
+or
+var socket = new websockets.connect('wss://127.0.0.1');
 socket.on('open', function() {
   socket.send('a message');
   ......
 });
+socket.on('message', ...)
 
 ```
 
@@ -102,9 +105,9 @@ Emitted when client-server opening handshake has succeeded. `socket` is an insta
   
 <br/>
 
-#### server.broadcast(string)
-Not Implemented.
+#### server.broadcast(string, site)
 Sends `string` to all clients connected with `server`.
+if site sets "true", then, sends to clients access from same pathname.
 
 <br/>
 
@@ -162,4 +165,4 @@ Sends a connection close request to the other endpoint.
 <br/>
 TODO
 =
-* implementation of server broadcast
+* test of sending on binary mode.
