@@ -1,8 +1,8 @@
 {
 	"name": "websockets",
 	"description": "WebSocket Server & Client API",
-	"version": "0.1.0",
-	"author": "EastCloud <info@east-cloud.co.jp> okubo, ystskm",
+	"version": "0.2.0",
+	"author": "Yoshitaka Sakamoto<sakamoto@liberty-technology.biz>",
 	"repository": {
         "type": "git",
         "url": "https://ystskm@github.com/ystskm/node-websockets.git"
@@ -12,7 +12,7 @@
     "qs": ">= 0.5.0"
   },
 	"engines": {
-		"node": ">=0.4.12"
+		"node": ">=0.10"
 	},
 	"licenses": [{
 		"type": "MIT",
