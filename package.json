@@ -1,7 +1,7 @@
 {
 	"name": "websockets",
 	"description": "WebSocket Server & Client API",
-	"version": "0.2.1",
+	"version": "0.9.0",
 	"author": "Yoshitaka Sakamoto<sakamoto@liberty-technology.biz>",
 	"repository": {
         "type": "git",
