@@ -5,3 +5,4 @@ node_modules
 build.xml
 release.sh
 release-LICENSE
+/lib_bk/
