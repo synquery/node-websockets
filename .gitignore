@@ -6,3 +6,4 @@ build.xml
 release.sh
 release-LICENSE
 /lib_bk/
+/package-lock.json
