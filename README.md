@@ -22,7 +22,7 @@ Usage
 require `websockets`
 
 ```js
-var websockets = require("websockets");
+const websockets = require("websockets");
 
 ```
 
@@ -32,7 +32,7 @@ Server is a wrapper of `http/https` server.
 ```js
 
 // http based server
-var server = websockets.createServer();
+const server = websockets.createServer();
 server.on('connect', function(socket) {
   socket.on('message', function(message) {
     socket.send('echo a message:' + message);
@@ -41,7 +41,7 @@ server.on('connect', function(socket) {
 }).listen(80);
 
 // https based server
-var secure = websockets.createServer({
+const secure = websockets.createServer({
   key: ssl_key,
   cert: ssl_cert
 });
@@ -56,18 +56,18 @@ Extended Servers such as [express](http://expressjs.com/) are also available.
 
 ```js
 // In case of 'express'
-var express = require('express');
+const express = require('express');
 
-var svr = express.createServer();
-svr.get('/', function(req, res) {
+const rest_svr = express.createServer();
+rest_svr.get('/', function(req, res) {
   ......
 });
 svr.configure(function() {
   ......
 });
 
-var server = websockets.createServer({
-  server: svr
+const server = websockets.createServer({
+  server: rest_svr
 });
 server.on('connect', function(socket) {
   socket.on('message', function(message) {
@@ -83,9 +83,9 @@ server.on('connect', function(socket) {
 Client has the interfaces like [html5 WebSocket](http://www.w3.org/TR/2011/WD-websockets-20110419/).
 
 ```js
-var socket = new websockets.WebSocket('wss://127.0.0.1');
+const socket = new websockets.WebSocket('wss://127.0.0.1');
 or
-var socket = new websockets.connect('wss://127.0.0.1');
+const socket = new websockets.connect('wss://127.0.0.1');
 socket.on('open', function() {
   socket.send('a message');
   ......
