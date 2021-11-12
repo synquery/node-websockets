@@ -13,7 +13,7 @@ node-websockets
 Install
 -
 
-    npm install websockets
+    npm i https://github.com/synquery/node-websockets.git
 
 
 Usage
