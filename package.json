@@ -1,23 +1,23 @@
 {
-	"name": "websockets",
-	"description": "WebSocket Server & Client API",
-	"version": "0.9.2",
-	"author": "Yoshitaka Sakamoto<sakamoto@liberty-technology.biz>",
-	"repository": {
-  		"type": "git",
-		  "url": "https://github.com/ystskm/node-websockets.git"
-	},
-	"main": "./lib/websockets",
-		"dependencies": {
-		  "qs": ">= 0.5.0"
-	},
-	"engines": {
-  		"node": ">=0.10"
-	},
-	"licenses": [
-	{
-  			"type": "MIT",
-			  "url": "https://github.com/ystskm/node-websockets/blob/master/LICENSE.md"
-		}
-	]
+  "name": "websockets",
+  "description": "WebSocket Server & Client API",
+  "version": "0.9.2",
+  "author": "Yoshitaka Sakamoto<sakamoto@synquery.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ystskm/node-websockets.git"
+  },
+  "main": "./lib/websockets",
+    "dependencies": {
+    "qs": ">= 0.5.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "licenses": [
+  {
+    "type": "MIT",
+    "url": "https://github.com/ystskm/node-websockets/blob/master/LICENSE.md"
+  }
+  ]
 }
